@@ -33,7 +33,7 @@ class Alipay {
 
     // 生产环境
     async prod() {
-        let widget = this.setSize();
+        let widget = await this.setSize();
         Script.setWidget(widget);
         Script.complete();
     }
